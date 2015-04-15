@@ -1,0 +1,1 @@
+## This is a markdown file - Greenttee on Coursera - 2nd attempt - with correct file extension  .md 
