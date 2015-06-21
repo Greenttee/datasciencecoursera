@@ -1,9 +1,9 @@
 @ GetData---HAR-Tidy-Dataset-Project
 GetData - Project Assignment HAR Tidy Dataset
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 @    Human Activity Research Project
 @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 
 @ Basic housekeeping....
 @ Remember local path for data files downloaded
@@ -16,11 +16,11 @@ filePath<-"C:/Users/Tony Truong/Desktop/Coursera R/GetData/UCI HAR Dataset" @ th
 library(dplyr)
 library(reshape2)
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 @
 @       Part 1:  Merges the training and the test sets to create one data set.
 @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 
 @ Train and Test datasets each has 4 components in 4 different files
 @     x data:   contains the calculated/filtered "features" of the
