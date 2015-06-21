@@ -1,0 +1,42 @@
+CODE Book for HAR Tidy Dataset Project
+
+This file provides information on file names used or created, data.frames variables used/created by the run_analysis script.
+
+Files Read:
+
+File Name		Description	
+											Dimensions
+X_test.txt	    Features Test data for all activities & subjects		2947 obs 561 variables
+X_train.txt		Features Train data for all activities & subjects		7352 obs 561 variables
+
+y_test.txt      Activity Test data										2947 obs 1 variable
+y_train.txt     Activity Train data										7352 obs  1 variable
+
+features.txt	Description of features - Used as column headings		561 features 2 variables
+
+subject_test.txt Subject Test Data										2947 obs 1 variable	
+subject_train.txt Subject Train Data									7352 obs 1 variable
+
+Data frames created:
+
+xCombinedData	Row combined of X_test and X_train						10299 obs 561 variables
+yCombinedData	Row combined of y_test and y_train						10299 obs 1 variable
+
+xMean			Subset of xCombinedData with only mean variables		10299 obs 46 variables
+xStd			Subject of xCombinedData with only std  variables		10299 obs 33 variables
+
+SubjectActivity	Column combined of Subject and Activity					10299 obs 2 variables
+
+HARTidy			Column combine of SubjectActivity, xMean and xStd		10299 obs 81 variables
+
+TestMerge		Is HARTiday with ActivityDescription added as new column
+				Once ActivityDescription column has been added, Activity 
+				variable was removed, and the ActivityDescription column
+				was moved to be the first column (just for clarity)		10299 obs 81 variables
+				
+meltTM			Melted TestMerge by ActivityDescription and Subject		813621 obs 4 variables
+
+Part5			Independent Tidy dataset from casting meltTM 
+				with ActivityDescription and Subject as groups means	
+
+
